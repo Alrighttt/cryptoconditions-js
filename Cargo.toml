@@ -8,8 +8,7 @@ edition = "2018"
 
 [lib]
 name = "cryptoconditions"       
-#crate-type = ["rlib", "dylib"]
-crate-type = ["cdylib"]
+crate-type = ["rlib","cdylib"]
 
 [dependencies]
 asn1 = { git = "https://github.com/alex/rust-asn1", branch = "main" }
