@@ -139,11 +139,11 @@ impl Condition {
                 let mut elems = asn_data(&vec![t]);
                 elems.push(asn_choice(1, &asns));
 
-                println!("subconds begin");
+                info!("subconds begin");
                 for child in asns {
-                    println!("asns[]={}", hex::encode(encode_asn(&child)));
+                    info!("asns[]={}", hex::encode(encode_asn(&child)));
                 }
-                println!("subconds end");
+                info!("subconds end");
    
                 hash_asn(&ASN1Block::Sequence(0, elems))
             }
