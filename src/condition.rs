@@ -659,13 +659,13 @@ mod tests {
         let cond = Threshold {
             threshold: 3,
             subconditions: vec![
-                Preimage { preimage: base64::decode("Ag").unwrap() },
+                Preimage { preimage: base64::decode("Ag==").unwrap() },
                 Threshold {
                     threshold: 1,
                     subconditions: vec![
-                        Preimage { preimage: base64::decode("AQ").unwrap() },
+                        Preimage { preimage: base64::decode("AQ==").unwrap() },
                         Anon {
-                            fingerprint: base64::decode("ZXnDvVdNoigDI04S3c7EBeK5kJIAAAAAAAAAAAAAAAA").unwrap(),
+                            fingerprint: base64::decode("ZXnDvVdNoigDI04S3c7EBeK5kJIAAAAAAAAAAAAAAAA=").unwrap(),
                             cost: 131072,
                             cond_type: Secp256k1HashType,
                             subtypes: HashSet::new()
