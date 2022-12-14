@@ -12,10 +12,10 @@ name = "cryptoconditions"
 crate-type = ["rlib","cdylib"]
 
 [dependencies]
-asn1 = { git = "https://github.com/alex/rust-asn1", branch = "main" }
+asn1 = "0.13.0"
 libsecp256k1 = "0.6.0"
-simple_asn1 = { git = "https://github.com/ssadler/simple_asn1" }
-num-bigint = "0.2.6"
+simple_asn1 = "0.6.2"
+num-bigint = "0.4.3"
 num-traits = "0.2"
 sha2 = "0.8.0"
 wasm-bindgen = "0.2.8"
@@ -23,9 +23,9 @@ js-sys = "0.3"
 cfg-if = "0.1"
 log = "0.4"
 console_log = { version = "0.2", optional = true }
-base64 = "*"
-hex = "*"
-file = "*"
+base64 = "0.20.0"
+hex = "0.4.3"
+file = "1.1.2"
 ripemd = "0.1.1"
 
 [dev-dependencies]
